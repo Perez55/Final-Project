@@ -2020,11 +2020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj",
+      "projectUniqueName": "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj",
       "projectName": "Final Project",
-      "projectPath": "c:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj",
+      "projectPath": "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj",
       "packagesPath": "C:\\Users\\15135\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\obj\\",
+      "outputPath": "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2094,7 +2094,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

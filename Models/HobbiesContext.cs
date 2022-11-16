@@ -10,7 +10,7 @@ namespace Final_Project.Models
     public DbSet<Hobbies> hobbies {get;set;}
     public DbSet<User> user {get;set;}
 
-    protect override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
 
