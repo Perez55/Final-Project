@@ -1,13 +1,18 @@
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 namespace Final_Project.Models;
-public class User {
+public class User
+{
 
-public int UserId {get;set;}
-public string FirstName {get;set;}
-public string LastName {get;set;}
-public string Username {get;set;}
-public string Password {get;set;}
-public string Desc {get;set;} //This information about themself will be store here 
+    public int UserId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
+    public string Desc { get; set; } //This information about themselves will be store here 
 
+    public ICollection<Hobbies> Hobby { get; set; }
 
 
 
