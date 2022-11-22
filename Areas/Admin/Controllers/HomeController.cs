@@ -6,8 +6,7 @@ using Final_Project.Models;
 namespace Final_Project.Areas.Admin.Controllers
 {
 
-    [Area("Admin")]
-    
+[Area("Admin")]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
