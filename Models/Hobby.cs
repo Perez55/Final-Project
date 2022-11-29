@@ -12,8 +12,8 @@ public class Hobby
 
     public string Desc { get; set; } //? means nullable 
     public Hobby hobby { get; set; }
-    public int UserId { get; set; } //FK
-    public User user { get; set; }
+    public int AdminId { get; set; } //FK
+    public Admin admin { get; set; }
 
     // Add a foriegn key to a user table --> user table will hold information about the person who is assoicted by the hobby; as well contain password and username -- maybe
 

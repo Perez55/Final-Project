@@ -9,14 +9,14 @@ namespace Final_Project.Models
 
         { }
         public DbSet<Hobby> hobby { get; set; }
-        public DbSet<User> user { get; set; }
+        public DbSet<Admin> admin { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new HobbyConfig());
-            modelBuilder.ApplyConfiguration(new UserConfig());
+            modelBuilder.ApplyConfiguration(new AdminConfig());
 
         }
 
