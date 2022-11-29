@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final-Project\\Final Project.csproj": {}
+    "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final-Project\\Final Project.csproj": {
+    "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final-Project\\Final Project.csproj",
+        "projectUniqueName": "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj",
         "projectName": "Final Project",
-        "projectPath": "C:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final-Project\\Final Project.csproj",
-        "packagesPath": "C:\\Users\\hilbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final-Project\\obj\\",
+        "projectPath": "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Final Project.csproj",
+        "packagesPath": "C:\\Users\\15135\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\15135\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilbe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\15135\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

@@ -8,7 +8,7 @@ namespace Final_Project.Models
         public void Configure(EntityTypeBuilder<Hobby> entity)
         {
            entity.HasData (
-            new Hobby { HobbyID = 1, HobbyName = "Art", Desc = "Art is the best", AdminId = 1}
+            new Hobby { HobbyID = 1, HobbyName = "Art", Desc = "Art is the best"}
            );
         }
     }

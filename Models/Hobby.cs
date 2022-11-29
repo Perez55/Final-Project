@@ -9,12 +9,10 @@ public class Hobby
     //Not sure if I should hardcode the hobby or get the information of a hobby in the database
     public int HobbyID { get; set; }
     public string HobbyName { get; set; }
+    public string Desc { get; set; } //? means nullable; desc of hobby
 
-    public string Desc { get; set; } //? means nullable 
-    public Hobby hobby { get; set; }
-    public int AdminId { get; set; } //FK
-    public Admin admin { get; set; }
 
-    // Add a foriegn key to a user table --> user table will hold information about the person who is assoicted by the hobby; as well contain password and username -- maybe
+    // Add a foriegn key to the admin table --> admin table will hold information about the person who is assoicted by the hobby;
+    public ICollection<AdminHobby> AdminHobbies { get; set; }
 
 }
