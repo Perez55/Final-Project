@@ -7,7 +7,7 @@ public class Hobby
 {
     //This model will be about basic information about the hobby; this will be the table in the datbase
     //Not sure if I should hardcode the hobby or get the information of a hobby in the database
-    public int HobbyId { get; set; }
+    public int HobbyID { get; set; }
     public string HobbyName { get; set; }
 
     public string Desc { get; set; } //? means nullable 
