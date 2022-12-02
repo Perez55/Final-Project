@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Views\\Home\\PP.cshtml",
+      "TargetPath": "Views\\Home\\PP.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
@@ -16323,8 +16328,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Views\\Home\\HP.cshtml",
+      "TargetPath": "Views\\Home\\HP.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\hilbe\\Documents\\UC_FALL_2022\\Web Server Application Dev\\Final Project\\Views\\Home\\RS.cshtml",
+      "TargetPath": "Views\\Home\\RS.cshtml",
       "FileKind": "mvc"
     }
   ],

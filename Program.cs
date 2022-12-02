@@ -13,7 +13,12 @@ builder.Services.AddDbContext<BookContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BookContext"));
 
 });
+builder.Services.AddRouting(options => {
+options.LowercaseQueryStrings = true;
+options.AppendTrailingSlash =true;
 
+
+});
 
 
 var app = builder.Build();

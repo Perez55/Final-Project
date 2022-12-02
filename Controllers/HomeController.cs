@@ -15,9 +15,10 @@ public class HomeController : Controller
     public IActionResult Index(string id)
     {
         // load current filters and data needed for filter drop downs in ViewBag
-        var filters = new Filters(id);
         BookViewModel model = new BookViewModel();
-        model.Filters = filters;
+        var filters = new Filters(id);
+       
+        model.Filters = new  Filters(id);
         model.Genres = context.Genres.ToList();
         model.ReadFilters = Filters.ReadFilterValues;
 
@@ -28,6 +29,8 @@ public class HomeController : Controller
         {
             query = query.Where(t => t.GenreId == filters.GenreId);
         }
+
+
         if (filters.HasDue)
         {
             var today = DateTime.Today;
@@ -53,6 +56,20 @@ public class HomeController : Controller
     {
         return View();
     }
+   public IActionResult HP()
+    {
+        return View();
+    }
+
+    public IActionResult PP(){
+        return View();
+    }
+
+   public IActionResult RS(){
+        return View();
+    }
+
+
 
     [HttpPost]
     public IActionResult Add(BookViewModel model)
