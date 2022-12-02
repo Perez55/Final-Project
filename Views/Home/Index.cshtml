@@ -1,17 +1,20 @@
-﻿@model BookViewModel
+﻿
+@model BookViewModel
 <div class="row">
     <div class="col-sm-2">
         <form asp-action="Filter" method="post">
             <div class="form-group">
                 <label>Genre:</label>
-                <select name="filter" class="form-control" asp-items="@(new SelectList(Model.Genres,
+                <select name="filter" class="form-control"
+                        asp-items="@(new SelectList(Model.Genres,
                     "GenreId", "Name", Model.Filters.GenreId))">
                     <option value="all">All</option>
                 </select>
             </div>
             <div class="form-group">
                 <label>Read:</label>
-                <select name="filter" class="form-control" asp-items="@(new SelectList(Model.ReadFilters,
+                <select name="filter" class="form-control"
+                        asp-items="@(new SelectList(Model.ReadFilters,
                     "Key", "Value", Model.Filters.Due))">
                     <option value="all">All</option>
                 </select>
@@ -35,32 +38,48 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (Book book in Model.Books)
-                {
-                    <tr>
-                        <td>@book.Title</td>
-                        <td>@book.Genre.Name</td>
-                        <td>@book.StartDate?.ToShortDateString()</td>
-                        <td>@book.CompleteDate?.ToShortDateString()</td>
-                        <td>
-                            <form asp-action="Edit" method="post" asp-route-id="@Model.Filters.FilterString" class="mr-2">
+            @foreach (Book book in Model.Books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Genre.Name</td>
+                    <td>@book.StartDate?.ToShortDateString()</td>
+                    <td>@book.CompleteDate?.ToShortDateString()</td>
+                    <td>
+                        <form asp-action="Edit" method="post"
+                              asp-route-id="@Model.Filters.FilterString"
+                              class="mr-2">
 
-                                <input type="hidden" name="@nameof(Book.Id)" value="@book.Id" />
+                            <input type="hidden"
+                                   name="@nameof(Book.Id)" value="@book.Id" />
 
-                                <button type="submit" name="action" value="start" class="btn btn-primary btn-sm">
+                            @if (book.StartDate == null)
+                            {
+                                <button type="submit"
+                                        name="action" value="start"
+                                        class="btn btn-primary btn-sm">
                                     Started
                                 </button>
+                            }
 
-                                <button type="submit" name="action" value="complete"
-                                class="btn btn-primary btn-sm">Completed
+                            @if (book.CompleteDate == null)
+                            {
+                                <button type="submit"
+                                        name="action" value="complete"
+                                        class="btn btn-primary btn-sm">
+                                    Completed
                                 </button>
+                            }
 
-                                <button type="submit" name="action" value="delete" class="btn btn-primary btn-sm">Delete
-                                </button>
-                            </form>
-                        </td>
-                    </tr>
-                }
+                            <button type="submit"
+                                    name="action" value="delete"
+                                    class="btn btn-primary btn-sm">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
             </tbody>
         </table>
     </div>
