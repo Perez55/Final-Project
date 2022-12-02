@@ -1,6 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
 
-namespace ReadingList.Models
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace Final_Project.Models
 {
     public class BookContext : DbContext
     {

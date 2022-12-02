@@ -1,4 +1,6 @@
-﻿namespace ReadingList.Models
+using System;
+using System.ComponentModel.DataAnnotations;
+namespace Final_Project.Models
 {
     public class Genre
     {

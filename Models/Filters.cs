@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace ReadingList.Models
+namespace Final_Project.Models
 {
     public class Filters
     {
